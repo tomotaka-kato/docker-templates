@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    container_name: 'rust'
+    build: ./
+    tty: true
+    volumes:
+      - ./app:/app
+      - rust-sandbox-packages:/root/.cargo/registry
+
+volumes:
+  rust-sandbox-packages:
+    driver: local
