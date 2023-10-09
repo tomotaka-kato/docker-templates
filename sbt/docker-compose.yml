@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  sbt-sample:
+    container_name: 'sbt-sample'
+    build: ./
+    tty: true
+    volumes:
+      - ./app:/app
+
