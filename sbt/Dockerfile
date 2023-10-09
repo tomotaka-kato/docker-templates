@@ -17,7 +17,7 @@ RUN set -x \
     # create workdir
     && mkdir /work
 
-WORKDIR /work
+WORKDIR /app
 
 ENV PATH="/opt/sbt/sbt/bin:$PATH" \
     JAVA_OPTS="-XX:+UseContainerSupport -Dfile.encoding=UTF-8" \
